@@ -61,7 +61,6 @@ X_train, Y_train = read_hoda_dataset(dataset_path='./DigitDB/Train 60000.cdb',
                                 reshape=True)
 
 
-
 print('Reading test dataset (Test 20000.cdb)...')
 X_test, Y_test = read_hoda_dataset(dataset_path='./DigitDB/Test 20000.cdb',
                               images_height=32,
