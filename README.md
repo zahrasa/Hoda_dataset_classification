@@ -195,11 +195,6 @@ X_remaining, Y_remaining = read_hoda_dataset('./DigitDB/RemainingSamples.cdb',
 
 ![Figure 2](Figure_2.png)
 
-# Dependencies
-* Python 3
-* numpy
-* python-opencv
-* matplotlib (for `main.py`)
 
 # Links
 * http://farsiocr.ir/مجموعه-داده/مجموعه-ارقام-دستنویس-هدی
