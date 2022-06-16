@@ -195,12 +195,6 @@ X_remaining, Y_remaining = read_hoda_dataset('./DigitDB/RemainingSamples.cdb',
 
 ![Figure 2](Figure_2.png)
 
-# Running Sample Code
-To run sample code, type the following command at the command prompt:
-```
-python3 ./main.py
-```
-
 # Dependencies
 * Python 3
 * numpy
