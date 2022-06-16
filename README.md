@@ -80,6 +80,23 @@ X_remaining, Y_remaining = read_hoda_dataset('./DigitDB/RemainingSamples.cdb',
 ![Figure 2](Figure_2.png)
 
 
+# Defining model
+```
+model = keras.Sequential()
+model.add(keras.layers.Input(shape=x_train[0].shape))
+model.add(keras.layers.Conv2D(filters=128, kernel_size=(5, 5), activation='relu'))
+model.add(keras.layers.MaxPool2D())
+model.add(keras.layers.Conv2D(filters=128, kernel_size=(5, 5), activation='relu'))
+model.add(keras.layers.MaxPool2D())
+model.add(keras.layers.Flatten())
+model.add(keras.layers.Dense(units=120, activation='relu'))
+model.add(keras.layers.Dense(units=84, activation='relu'))
+model.add(keras.layers.Dense(units=num_classes, activation='softmax'))
+
+model.summary()
+```
+
+
 # Links
 * http://farsiocr.ir/مجموعه-داده/مجموعه-ارقام-دستنویس-هدی
 * http://dadegan.ir/catalog/hoda
