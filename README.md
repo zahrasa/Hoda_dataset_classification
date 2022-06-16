@@ -46,67 +46,6 @@ Samples with different qualities in the dataset:
 
 ![Samples with different qualities in the dataset](Farsi_Digits_Sample_2.gif)
 
-# Reading Images
-To read Hoda `.cdb` files as images (for example `Train 60000.cdb`), use the following code snippet:
-
-```Python
-from HodaDatasetReader import read_hoda_cdb
-
-# type(train_images):  <class 'list'>
-# len(train_images):  60000
-#
-# type(train_images[ i ]): <class 'numpy.ndarray'>
-# train_images[ i ].dtype: uint8
-# train_images[ i ].min(): 0
-# train_images[ i ].max(): 255
-# train_images[ i ].shape: (HEIGHT, WIDTH)
-#
-# type(train_labels):  <class 'list'>
-# len(train_labels):  60000
-#
-# type(train_labels[ i ]): <class 'int'>
-# train_labels[ i ]: 0...9
-print('Reading Train 60000.cdb ...')
-train_images, train_labels = read_hoda_cdb('./DigitDB/Train 60000.cdb')
-
-
-# type(test_images):  <class 'list'>
-# len(test_images):  20000
-#
-# type(test_images[ i ]): <class 'numpy.ndarray'>
-# test_images[ i ].dtype: uint8
-# test_images[ i ].min(): 0
-# test_images[ i ].max(): 255
-# test_images[ i ].shape: (HEIGHT, WIDTH)
-#
-# type(test_labels):  <class 'list'>
-# len(test_labels):  20000
-#
-# type(test_labels[ i ]): <class 'int'>
-# test_labels[ i ]: 0...9
-print('Reading Test 20000.cdb ...')
-test_images, test_labels = read_hoda_cdb('./DigitDB/Test 20000.cdb')
-
-
-# type(remaining_images):  <class 'list'>
-# len(remaining_images):  22352
-#
-# type(remaining_images[ i ]): <class 'numpy.ndarray'>
-# remaining_images[ i ].dtype: uint8
-# remaining_images[ i ].min(): 0
-# remaining_images[ i ].max(): 255
-# remaining_images[ i ].shape: (HEIGHT, WIDTH)
-#
-# type(remaining_labels):  <class 'list'>
-# len(remaining_labels):  22352
-#
-# type(remaining_labels[ i ]): <class 'int'>
-# remaining_labels[ i ]: 0...9
-print('Reading RemainingSamples.cdb ...')
-remaining_images, remaining_labels = read_hoda_cdb('./DigitDB/RemainingSamples.cdb')
-```
-
-![Figure 1](Figure_1.png)
 
 # Reading Datasets
 To read Hoda `.cdb` files as datasets (for example `Train 60000.cdb`), use the following code snippet:
