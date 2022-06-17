@@ -1,6 +1,6 @@
 In the name of God
 
-# Hoda Dataset Reader
+# Hoda Dataset Classification
 This repository contains Python code for reading Hoda farsi digit dataset.
 
 # Hoda Farsi Digit Dataset
@@ -81,6 +81,7 @@ X_remaining, Y_remaining = read_hoda_dataset('./DigitDB/RemainingSamples.cdb',
 
 
 # Defining model
+
 ```
 model = keras.Sequential()
 model.add(keras.layers.Input(shape=x_train[0].shape))
